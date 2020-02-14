@@ -3,7 +3,7 @@ const isTest = String(process.env.NODE_ENV) === 'test';
 
 module.exports = {
   presets: [
-    // jest run in node and don't understand import module
+    // jest run in node and don't understand import statement
     ['@babel/preset-env',{modules: isTest ? 'commonjs': false}],
     '@babel/preset-react',
     [

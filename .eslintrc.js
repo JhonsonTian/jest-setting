@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
   extends: [
     'kentcdodds',
@@ -12,7 +10,7 @@ module.exports = {
     'import/named': 'off',
   },
   settings: {'import/resolver': 'node'},
-  overrides: [
+  overrides: [  // path resolve manage by webpack
     {
       files: ['**/src/**'],
       settings: {'import/resolver': 'webpack'},
